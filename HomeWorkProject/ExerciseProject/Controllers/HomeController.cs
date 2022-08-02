@@ -1,6 +1,7 @@
 ﻿using ExerciseProject.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using ExerciseProject.Services;
 
 namespace ExerciseProject.Controllers
 {
@@ -13,8 +14,13 @@ namespace ExerciseProject.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        
+        public IActionResult Index(string Value)
         {
+            test t1 = new test();
+           var val= t1.getvalue();
+
+            string s1 = Value;
             var model = new SendMessageModel()
             {
                 Id = 1,
