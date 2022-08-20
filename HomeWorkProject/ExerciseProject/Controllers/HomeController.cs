@@ -32,10 +32,6 @@ namespace ExerciseProject.Controllers
         }
 
 
-
-
-
-
         public IActionResult Privacy()
         {
             
