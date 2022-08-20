@@ -20,6 +20,9 @@ namespace ExerciseProject.Controllers
             test t1 = new test();
            var val= t1.getvalue();
 
+
+
+
             string s1 = Value;
             var model = new SendMessageModel()
             {
