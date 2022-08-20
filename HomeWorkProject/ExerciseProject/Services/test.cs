@@ -5,7 +5,17 @@
 
         public int getvalue()
         {
-            return 12; 
+
+            try
+            {
+                return 12;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            
         }
     }
 }
