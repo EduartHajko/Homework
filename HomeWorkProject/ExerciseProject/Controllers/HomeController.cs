@@ -21,8 +21,6 @@ namespace ExerciseProject.Controllers
            var val= t1.getvalue();
 
 
-
-
             string s1 = Value;
             var model = new SendMessageModel()
             {
