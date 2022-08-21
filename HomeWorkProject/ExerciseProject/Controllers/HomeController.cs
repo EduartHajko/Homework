@@ -16,7 +16,7 @@ namespace ExerciseProject.Controllers
 
         
         public IActionResult Index(string Value)
-        {
+        { 
             test t1 = new test();
            var val= t1.getvalue();
 

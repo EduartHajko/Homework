@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User_\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj": {}
+    "C:\\Users\\DELL\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User_\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj": {
+    "C:\\Users\\DELL\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User_\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
         "projectName": "HomeWorkProject",
-        "projectPath": "C:\\Users\\User_\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
-        "packagesPath": "C:\\Users\\User_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User_\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\obj\\",
+        "projectPath": "C:\\Users\\DELL\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,7 +45,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -54,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
