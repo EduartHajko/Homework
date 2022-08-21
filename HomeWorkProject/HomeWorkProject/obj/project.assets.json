@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\User_\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Homework23\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
+      "projectUniqueName": "C:\\Users\\User_\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
       "projectName": "HomeWorkProject",
-      "projectPath": "C:\\Users\\user\\Source\\Repos\\Homework23\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Source\\Repos\\Homework23\\HomeWorkProject\\HomeWorkProject\\obj\\",
+      "projectPath": "C:\\Users\\User_\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
+      "packagesPath": "C:\\Users\\User_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User_\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User_\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
