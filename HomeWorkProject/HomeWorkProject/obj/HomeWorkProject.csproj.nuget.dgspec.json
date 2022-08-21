@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User_\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj": {}
+    "C:\\Users\\HP\\Source\\Repos\\Homework23\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User_\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj": {
+    "C:\\Users\\HP\\Source\\Repos\\Homework23\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User_\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\Homework23\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
         "projectName": "HomeWorkProject",
-        "projectPath": "C:\\Users\\User_\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
-        "packagesPath": "C:\\Users\\User_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User_\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Source\\Repos\\Homework23\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Source\\Repos\\Homework23\\HomeWorkProject\\HomeWorkProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }
