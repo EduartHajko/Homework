@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj": {}
+    "C:\\Users\\AG\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj": {
+    "C:\\Users\\AG\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
+        "projectUniqueName": "C:\\Users\\AG\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
         "projectName": "HomeWorkProject",
-        "projectPath": "C:\\Users\\DELL\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\obj\\",
+        "projectPath": "C:\\Users\\AG\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
+        "packagesPath": "C:\\Users\\AG\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AG\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AG\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
