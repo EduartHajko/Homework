@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\armir\\.nuget\\packages\\": {}
+    "C:\\Users\\Arkitekt\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\armir\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
+      "projectUniqueName": "C:\\Users\\Arkitekt\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
       "projectName": "HomeWorkProject",
-      "projectPath": "C:\\Users\\armir\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
-      "packagesPath": "C:\\Users\\armir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\armir\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\obj\\",
+      "projectPath": "C:\\Users\\Arkitekt\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
+      "packagesPath": "C:\\Users\\Arkitekt\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Arkitekt\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\armir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Arkitekt\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
