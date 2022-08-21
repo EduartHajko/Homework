@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
       "projectName": "HomeWorkProject",
-      "projectPath": "C:\\Users\\user\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\obj\\",
+      "projectPath": "C:\\Users\\HP\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HP\\Source\\Repos\\Homework4\\HomeWorkProject\\HomeWorkProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
