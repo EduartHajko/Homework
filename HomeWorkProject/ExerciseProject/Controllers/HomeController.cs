@@ -17,7 +17,7 @@ namespace ExerciseProject.Controllers
         
         public IActionResult Index(string Value)
         { 
-            test t1 = new test();
+            Eduart_Hajko_Task t1 = new Eduart_Hajko_Task();
            var val= t1.getvalue();
 
             string s1 = Value;
