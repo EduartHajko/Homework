@@ -20,15 +20,10 @@ namespace ExerciseProject.Controllers
             Eduart_Hajko_Task t1 = new Eduart_Hajko_Task();
            var val= t1.getvalue();
 
-            string s1 = Value;
-            var model = new SendMessageModel()
-            {
-                Id = 1,
-                Name = "rehigreogreoigerogjreogerjg"
-            };
-            model.Name = "muksi9";
-            ViewData["Rezultatet"] = "Rezultatet e ushtrimeve";
-            return View(model);
+       
+            ViewData["Rezultatet"] = val;
+
+            return View();
         }
 
 
