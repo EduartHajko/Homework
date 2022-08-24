@@ -20,11 +20,12 @@ namespace ExerciseProject.Controllers
             Eduart_Hajko_Task t1 = new Eduart_Hajko_Task();
            var val= t1.getvalue();
 
-       
+            ViewData["Console"] = "Rezultati i Ushtrimit";
             ViewData["Rezultatet"] = val;
 
             return View();
         }
+
 
         public IActionResult Privacy()
         {
