@@ -26,10 +26,6 @@ namespace ExerciseProject.Controllers
             return View();
         }
 
-
-
-
-
         public IActionResult Privacy()
         {
             
