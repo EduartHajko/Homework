@@ -14,7 +14,7 @@ namespace ExerciseProject.Controllers
             _logger = logger;
         }
 
-        
+       
         public IActionResult Index(string Value)
         { 
             Eduart_Hajko_Task t1 = new Eduart_Hajko_Task();
@@ -24,6 +24,14 @@ namespace ExerciseProject.Controllers
             ViewData["Rezultatet"] = val;
 
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult GetValueFromPostman(string parameter)
+        {
+            
+
+            return Json("edi");
         }
 
 
