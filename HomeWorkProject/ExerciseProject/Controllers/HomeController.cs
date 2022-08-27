@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using ExerciseProject.Services;
+using System.Text;
 
 namespace ExerciseProject.Controllers
 {
@@ -14,7 +15,7 @@ namespace ExerciseProject.Controllers
             _logger = logger;
         }
 
-       
+     
         public IActionResult Index(string Value)
         { 
             Eduart_Hajko_Task t1 = new Eduart_Hajko_Task();
@@ -25,13 +26,22 @@ namespace ExerciseProject.Controllers
 
             return View();
         }
-
+        //task 8 return from postman sum of numbers
         [HttpGet]
-        public IActionResult GetValueFromPostman(string parameter)
+        public IActionResult GetValueFromPostman(string edi )
         {
-            
-
-            return Json("edi");
+            // exercise
+            int sum = 0;
+            StringBuilder s = new StringBuilder();
+            for (int i = 0; i <= 10; i++)
+            {
+                if (i % 3 != 0)
+                {
+                    sum += i;
+                    s.Append(i + ",");
+                }
+            }
+            return Json(s.ToString() + " dhe shuma eshte: " + sum);
         }
 
 
