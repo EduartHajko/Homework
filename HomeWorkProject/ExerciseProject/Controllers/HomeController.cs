@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using ExerciseProject.Services;
+using System.Text;
 
 namespace ExerciseProject.Controllers
 {
@@ -29,9 +30,22 @@ namespace ExerciseProject.Controllers
         [HttpGet]
         public IActionResult GetValueFromPostman(string parameter)
         {
-            
 
-            return Json("edi");
+            // exercise
+
+            int sum = 0;
+            StringBuilder s = new StringBuilder();
+            for (int i = 0; i <= 500; i++)
+            {
+                if (i % 3 != 0)
+                {
+                    sum += i;
+                    s.Append(i + ",");
+                }
+
+            }
+
+            return Json(s.ToString() + " dhe shuma eshte: " + sum);
         }
 
 
