@@ -58,6 +58,62 @@ namespace HomeWorkProject
 
         }
 
+        //ushtrimi 3 me palindrom
+        public static void Solution3()
+        {
+     
+            int num, rem, sum = 0, temp;
+            //clrscr();    
+            Console.WriteLine("\n >>>> To Find a Number is Palindrome or not <<<< ");
+            Console.Write("\n Enter a number: ");
+            num = Int32.Parse(Console.ReadLine());
+            temp = num;
+            while (num > 0)
+            {
+                rem = num % 10; //for getting remainder by dividing with 10    
+                num = num / 10; //for getting quotient by dividing with 10    
+                sum = sum * 10 + rem;
+                /*multiplying the sum with 10 and adding  
+                remainder*/
+            }
+            Console.WriteLine("\n The Reversed Number is: {0} \n", sum);
+            if (temp == sum) //checking whether the reversed number is equal to entered number    
+            {
+                Console.WriteLine("\n Number is Palindrome \n\n");
+            }
+            else
+            {
+                Console.WriteLine("\n Number is not a palindrome \n\n");
+            }
+            Console.ReadLine();
+
+}
+
+
+
+        //ushtrimi 3 palindrom reverse
+        public static void solution4()
+        {
+            string value, reversedValue = "";
+            Console.Write("Enter a string : ");
+            value = Console.ReadLine();
+            if (value != null)
+            {
+                for (int i = value.Length - 1; i >= 0; i--)
+                {
+                    reversedValue += value[i].ToString();
+                }
+                if (reversedValue == value)
+                {
+                    Console.WriteLine("String is a Palindrome String: {0} and Reversed String is: {1}", value, reversedValue);
+                }
+                else
+                {
+                    Console.WriteLine("String is not a Palindrome String: {0} and Reversed String: {1}", value, reversedValue);
+                }
+            }
+
+        }
 
     }
 }
