@@ -151,8 +151,37 @@ namespace HomeWorkProject
                 Console.WriteLine($"Days until next SDA classes: {daysUntil}");
             }
         }
-     
 
+
+
+        public static void Solution5()
+        {
+
+            try
+            {
+                Console.WriteLine("PLease insert the date of the next course in format(MM/dd/yyyy): \n");
+                string nextCourseDate = Console.ReadLine();
+                DateTime enteredDate = DateTime.Parse(nextCourseDate);
+
+                Console.WriteLine("You date of the next lesson in SDA is: {0}", enteredDate);
+
+                DateTime todayDate = DateTime.Today;
+
+                Console.WriteLine("The current day is: {0}", todayDate.ToString("MM/dd/yyyy"));
+
+                int daysRemaining = (enteredDate.Date - todayDate).Days;
+
+                Console.WriteLine("The days until the next course date are: {0}.", daysRemaining);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+
+
+        }
     }
                         
 }
