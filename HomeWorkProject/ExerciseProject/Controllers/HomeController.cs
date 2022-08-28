@@ -30,18 +30,23 @@ namespace ExerciseProject.Controllers
         [HttpGet]
         public IActionResult GetValueFromPostman(string edi )
         {
-            // exercise
-            int sum = 0;
-            StringBuilder s = new StringBuilder();
-            for (int i = 0; i <= 10; i++)
+
+            //detyr e shtepise kthe listen reverse 
+           List<int> list = new List<int>();
+            StringBuilder st = new StringBuilder();     
+            int[] array = new int[] { 1, 3, 5, 7, 9 };
+
+
+            for (int i = array.Length - 1; i >= 0; i--)
             {
-                if (i % 3 != 0)
-                {
-                    sum += i;
-                    s.Append(i + ",");
-                }
+                list.Add(array[i]);
             }
-            return Json(s.ToString() + " dhe shuma eshte: " + sum);
+            foreach  (var a in list)
+            {
+                st.Append(a.ToString()+ " , ");
+            }
+
+            return Json("lista e arrayt reverse "+ st.ToString());
         }
 
 
