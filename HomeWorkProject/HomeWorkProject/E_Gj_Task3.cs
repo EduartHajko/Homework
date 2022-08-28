@@ -39,47 +39,82 @@ namespace HomeWorkProject
         //    }
         //}
 
-        public static void Solution3()
+        //        public static void Solution3()
+        //        {
+        //            IDictionary<string, string> accounts = new Dictionary<string, string>();
+        //            accounts.Add("Maksi", "lushnje123");
+        //            accounts.Add("Fredi", "fier123");
+        //            accounts.Add("Latifi", "korce123");
+        //            accounts.Add("Myrto", "berat123");
+
+        //            Console.WriteLine("Vendos nje username");
+        //            string input = Console.ReadLine();
+
+        //            if(accounts.ContainsKey(input))
+        //            {
+        //                Console.WriteLine("Vendos password");
+        //                string password = Console.ReadLine();
+        //                foreach (KeyValuePair<string, string> kvp in accounts)
+        //                    if (kvp.Value.Equals(password))
+        //                        {
+        //                        Console.WriteLine("Passowrd is correct");
+
+        //                    }
+        //                else if (!kvp.Value.Equals(password))
+        //                    {
+        //                        Console.WriteLine("Password is incorrect");
+        //                    }
+
+
+
+
+
+
+        //            }
+        //            else
+        //            {
+        //                Console.WriteLine("User nuk egziston");
+        //            }
+
+
+
+        //        }
+
+
+        //    }
+        //}
+
+
+        //    public static void Solution4()
+        //    {
+        //        Console.WriteLine("Type in text");
+        //        string input = Console.ReadLine();
+        //        DateTime date = DateTime.Parse(input);
+        //        int daysUntil = (int)Math.Ceiling(date.Subtract(DateTime.Now).TotalDays);
+
+        //        Console.WriteLine($"Days until next SDA classes: {daysUntil}");
+
+        //    }
+
+        //}
+
+
+        public static void Solution5()
         {
-            IDictionary<string, string> accounts = new Dictionary<string, string>();
-            accounts.Add("Maksi", "lushnje123");
-            accounts.Add("Fredi", "fier123");
-            accounts.Add("Latifi", "korce123");
-            accounts.Add("Myrto", "berat123");
-
-            Console.WriteLine("Vendos nje username");
+            Console.WriteLine("Type in text");
             string input = Console.ReadLine();
+            string[] inputs = input.Split(' ');
 
-            if(accounts.ContainsKey(input))
+            StringBuilder sb = new StringBuilder();
+
+            foreach (string word in inputs)
             {
-                Console.WriteLine("Vendos password");
-                string password = Console.ReadLine();
-                foreach (KeyValuePair<string, string> kvp in accounts)
-                    if (kvp.Value.Equals(password))
-                        {
-                        Console.WriteLine("Passowrd is correct");
-                       
-                    }
-                else if (!kvp.Value.Equals(password))
-                    {
-                        Console.WriteLine("Password is incorrect");
-                    }
-               
-                
-
-
-
-
-            }
-            else
-            {
-                Console.WriteLine("User nuk egziston");
+                sb.Append($"{word} ");
+                sb.Append($"{word} ");
             }
 
-
-
+            Console.WriteLine(sb.ToString());
         }
-
-
     }
+
 }
