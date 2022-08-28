@@ -67,12 +67,32 @@ namespace HomeWorkProject
 
 
             //Detyra e shtepise
-            int[] num = { 22, 50, 11, 2, 49 };
-            Array.Reverse(num);
-            for (int i = 0; i < num.Length; i++)
-            {
-                Console.Write(num[i] + " ");
-            }
+            //int[] num = { 22, 50, 11, 2, 49 };
+            //Array.Reverse(num);
+            //for (int i = 0; i < num.Length; i++)
+            //{
+            //    Console.Write(num[i] + " ");
+            //}
+           
+            
+            
+            DateTime CurrentDate = DateTime.Now;
+
+           
+            Console.WriteLine("The current date is: " + CurrentDate);
+            
+            
+            Console.WriteLine("Put the next date ");
+
+
+
+            string nextdate = Console.ReadLine();
+
+            //date_timestamp = nextdate(time.strptime(date, "%d/%m/%Y"))
+
+            Console.WriteLine(nextdate.Day - CurrentDate.Day);
+
+
         }
     }
 }
