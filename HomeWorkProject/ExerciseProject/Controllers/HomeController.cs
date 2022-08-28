@@ -29,7 +29,8 @@ namespace ExerciseProject.Controllers
         [HttpGet]
         public IActionResult GetValueFromPostman(string parameter)
         {
-            
+           
+          
 
             return Json("edi");
         }
@@ -38,6 +39,8 @@ namespace ExerciseProject.Controllers
         public IActionResult Privacy()
         {
             
+
+
             return View();
         }
 
