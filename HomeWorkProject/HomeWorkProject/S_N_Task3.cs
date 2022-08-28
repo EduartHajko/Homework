@@ -154,7 +154,7 @@ namespace HomeWorkProject
         }
 
 
-        public static void Solution9()
+        public static void Solution8()
         {
             Console.WriteLine("Ju lutemi vendosni e-mail-in tuaj: ");
             string input = Console.ReadLine();
@@ -169,5 +169,23 @@ namespace HomeWorkProject
                 Console.WriteLine("E-mail-i juaj nuk eshte korrekt!");
             }
         }
+
+        public static void Solution9()
+        {
+            Console.WriteLine("Type in text");
+            string input = Console.ReadLine();
+            string[] inputs = input.Split(' ');
+
+            StringBuilder sb = new StringBuilder();
+
+            foreach (string word in inputs)
+            {
+                sb.Append($"{word} ");
+                sb.Append($"{word} ");
+            }
+
+            Console.WriteLine(sb.ToString());
+        }
     }
 }
+
