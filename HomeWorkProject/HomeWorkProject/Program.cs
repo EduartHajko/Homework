@@ -16,8 +16,10 @@ public class SDA
 
         V_I_Task3.palindrome();
 
-        V_I_Task3.reverse();
+        //V_I_Task3.reverse();
 
         V_I_Task3.verifikoTeDhenat();
+
+        V_I_Task3.task9();
     }
 }

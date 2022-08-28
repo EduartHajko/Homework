@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 namespace HomeWorkProject
 {
     public class V_I_Task3
-    { 
+    {
         /*
         public static void getValue()
         {
@@ -77,12 +77,12 @@ namespace HomeWorkProject
             if (!uKonvertua)
             {
                 Console.WriteLine("Inputi eshte i gabuar!");
-                return ;
+                return;
             }
             int mbetja;
             int shuma = 0;
 
-            while(number > 0)
+            while (number > 0)
             {
                 mbetja = number % 10;
                 number /= 10;
@@ -119,7 +119,7 @@ namespace HomeWorkProject
         //    {
         //        Console.WriteLine("Tabela ne rendin e kundert: ", a[i]);
         //    }
-            
+
         //}
 
         //Ushtrim shto nje username nga console dhe verifiko nqs eshte ne dictionary ose jo(e njejte me passwordin)
@@ -148,6 +148,23 @@ namespace HomeWorkProject
                     }
                 }
             }
+        }
+
+        //Task 9
+
+        public static DateTime Now { get; }
+        public static void task9()
+        {
+            DateTime now = DateTime.Now;
+            Console.WriteLine("Ju lutemi jepni daten tjeter te kursit ne SDA: ");
+            string nextDate = Console.ReadLine();
+            DateTime dateTime = DateTime.Parse(nextDate);
+
+            //calculate how many days are left
+
+            int leftDays = (dateTime - now).Days;
+
+            Console.WriteLine("Ditet e ngelura deri ne diten e ores tjeter te SDA: " + leftDays);
 
         }
     }
