@@ -27,11 +27,11 @@ namespace ExerciseProject.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetValueFromPostman(string parameter)
+        public IActionResult GetValueFromPostman( )
         {
             
 
-            return Json("edi");
+            return Json("ana");
         }
 
 
