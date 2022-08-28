@@ -68,9 +68,9 @@ namespace HomeWorkProject
                 Console.WriteLine("user nuk exist");
             }
 
+            Console.WriteLine("user nuk exist dsgdsgryreyre");
 
 
-
-;        }
+            ;        }
     }
 }
