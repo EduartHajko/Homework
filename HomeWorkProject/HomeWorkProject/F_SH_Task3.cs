@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 namespace HomeWorkProject
 {
     public class F_SH_Task3
     {
+        private static object txtemail;
+
         //Ushtrimi1
         public static void Solution1()
         {
@@ -125,22 +128,22 @@ namespace HomeWorkProject
                 if (kvp.Key.Equals(input))
                 {
                     Console.WriteLine("Username is correct");
-                    string pass = Console.ReadLine(); 
+                    string pass = Console.ReadLine();
                     foreach (KeyValuePair<string, string> kvn in userNames)
                     {
-                            if (!kvn.Value.Equals(pass))
-                            {
-                                Console.WriteLine("Password is Correct");
-                               break;
-                            }
+                        if (!kvn.Value.Equals(pass))
+                        {
+                            Console.WriteLine("Password is Correct");
+                            break;
                         }
                     }
                 }
             }
+        }
         //ushtimi6
         public static void Solution6()
         {
-         Console.WriteLine("Please enter a date");
+            Console.WriteLine("Please enter a date");
             string input = Console.ReadLine();
             DateTime dateTime = DateTime.Parse(input);
             int daysUntil = (int)Math.Ceiling(dateTime.Subtract(DateTime.Now).TotalDays);
@@ -190,6 +193,22 @@ namespace HomeWorkProject
 
         }
 
+        public static void Solution9()
+        {
+            Console.WriteLine("Ju lutem vendosni emailin tuaj");
+            string input = Console.ReadLine();
+            string paterni = @"(@)";
+            Regex regex = new Regex(paterni);
+            if (regex.IsMatch(input))
+            {
+                Console.WriteLine("Emaili juaj eshte i sakte");
+            }
+            else
+            {
+                Console.WriteLine("Emaili juaj nuk eshte i sakte");
+            }
+        }
     }
 }
+   
    
