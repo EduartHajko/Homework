@@ -50,7 +50,7 @@ namespace ExerciseProject.Controllers
 
             //exercise 2 - HOMEWORK
 
-            StringBuilder elements = new StringBuilder();
+            /*StringBuilder elements = new StringBuilder();
             StringBuilder reversedElements = new StringBuilder();
 
             Random r = new Random();
@@ -73,7 +73,24 @@ namespace ExerciseProject.Controllers
             }
 
 
-            return Json("The random selected elements (" + arrSize + ") of the array are: " + elements.ToString() + " and the elements of the array in reversed order are: " + reversedElements.ToString());
+            return Json("The random selected elements (" + arrSize + ") of the array are: " + elements.ToString() + " and the elements of the array in reversed order are: " + reversedElements.ToString());*/
+
+            //detyr e shtepise kthe listen reverse 
+            List<int> list = new List<int>();
+            StringBuilder st = new StringBuilder();
+            int[] array = new int[] { 1, 3, 5, 7, 9 };
+
+
+            for (int i = array.Length - 1; i >= 0; i--)
+            {
+                list.Add(array[i]);
+            }
+            foreach (var a in list)
+            {
+                st.Append(a.ToString() + " , ");
+            }
+
+            return Json("lista e arrayt reverse " + st.ToString());
         }
 
 

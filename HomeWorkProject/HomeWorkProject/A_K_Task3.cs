@@ -178,5 +178,21 @@ namespace HomeWorkProject
                 Console.WriteLine("The address entered is a valid email");
             }
         }
+
+        public static void Solution7()
+        {
+            Console.WriteLine("Input the desired string: ");
+            string input = Console.ReadLine();
+            string[] inputs = input.Split(' ');
+
+            StringBuilder sb = new StringBuilder();
+
+            foreach (string word in inputs)
+            {
+                sb.Append($"{word}" + " ");
+                sb.Append($"{word}" + " ");
+            }
+            Console.WriteLine(sb.ToString());
+        }
     }
 }
