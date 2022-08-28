@@ -65,57 +65,92 @@ namespace HomeWorkProject
         public static void Solution3()
         {
 
-            
 
-                
-                    Console.Write("Enter a Number To Check Palindrome : ");
-                    int number = int.Parse(Console.ReadLine());
-                    int remineder, sum = 0;
-                    int temp = number;
-                    while (number > 0)
-                    {
 
-                        remineder = number % 10;
 
-                        sum = (sum * 10) + remineder;
-
-                        number = number / 10;
-                    }
-                    if (temp == sum)
-                    {
-                        Console.WriteLine($"Number {temp} is Palindrome.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Number {temp} is not Palindrome");
-                    }
-                    Console.ReadKey();
-                }
-            
-
-    //Ushtrimi4
-
-    public static void Solution4()
+            Console.Write("Enter a Number To Check Palindrome : ");
+            int number = int.Parse(Console.ReadLine());
+            int remineder, sum = 0;
+            int temp = number;
+            while (number > 0)
             {
-                        Console.Write("Enter a name to Check Palindrome : ");
-                        string name = Console.ReadLine();
-                        string reverse = string.Empty;
 
-                        for (int i = name.Length - 1; i >= 0; i--)
-                        {
-                            reverse += name[i];
-                        }
+                remineder = number % 10;
 
-                        if (name == reverse)
-                        {
-                            Console.WriteLine($"{name} is Palindrome.");
+                sum = (sum * 10) + remineder;
+
+                number = number / 10;
+            }
+            if (temp == sum)
+            {
+                Console.WriteLine($"Number {temp} is Palindrome.");
+            }
+            else
+            {
+                Console.WriteLine($"Number {temp} is not Palindrome");
+            }
+            Console.ReadKey();
+        }
+
+
+        //Ushtrimi4
+
+        public static void Solution4()
+        {
+            Console.Write("Enter a name to Check Palindrome : ");
+            string name = Console.ReadLine();
+            string reverse = string.Empty;
+
+            for (int i = name.Length - 1; i >= 0; i--)
+            {
+                reverse += name[i];
+            }
+
+            if (name == reverse)
+            {
+                Console.WriteLine($"{name} is Palindrome.");
+            }
+            else
+            {
+                Console.WriteLine($"{name} is not Palindrome");
+            }
+            Console.ReadKey();
+        }
+        //ushtrimi 5
+        public static void Solution5()
+        {
+            string input = Console.ReadLine();
+            IDictionary<string, string> userNames = new Dictionary<string, string>();
+            userNames.Add("Franko", "Shyti");
+            userNames.Add("John", "Doe");
+            userNames.Add("Filan", "Fisteku");
+            userNames.Add("User", "Pasword");
+            foreach (KeyValuePair<string, string> kvp in userNames)
+            {
+                if (kvp.Key.Equals(input))
+                {
+                    Console.WriteLine("Username is correct");
+                    string pass = Console.ReadLine(); 
+
+                    {
+                        Console.WriteLine("Username is not correct");
+                    }
+                    
+                    foreach (KeyValuePair<string, string> kvn in userNames)
+                    {
+                            if (!kvn.Value.Equals(pass))
+                            {
+                                Console.WriteLine("Password is Correct");
+                               break;
+                            }
                         }
-                        else
-                        {
-                            Console.WriteLine($"{name} is not Palindrome");
-                        }
-                        Console.ReadKey();
                     }
                 }
-            
+            }
+        //ushtimi5
+        public static void Solution6()
+        {
+
         }
+        }
+    }

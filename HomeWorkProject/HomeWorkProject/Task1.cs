@@ -1,29 +1,37 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HomeWorkProject
+public class Exercise26
 {
-    public class Task1
+    public static void Solution5()
     {
-        public static void Solution()
+        Console.WriteLine("\nSum of the first 500 prime numbers: ");
+        long sum = 0;
+        int ctr = 0;
+        int n = 2;
+        while (ctr < 500)
         {
-            try
+            if (isPrime(n))
             {
-                Console.WriteLine("Type in circle diameter:");
-                string input = Console.ReadLine();
-                double diameter = double.Parse(input);
-                double perimeter = 2 * Math.PI * diameter;
-                Console.WriteLine($"Circle perimeter is {perimeter}");
+                sum += n;
+                ctr++;
             }
-            catch (Exception)
-            {
-
-                throw;
-            }
-           
+            n++;
         }
+
+        Console.WriteLine(sum.ToString());
+
+    }
+    public static bool isPrime(int n)
+    {
+        int x = (int)Math.Floor(Math.Sqrt(n));
+
+        if (n == 1) return false;
+        if (n == 2) return true;
+
+        for (int i = 2; i <= x; ++i)
+        {
+            if (n % i == 0) return false;
+        }
+
+        return true;
     }
 }
