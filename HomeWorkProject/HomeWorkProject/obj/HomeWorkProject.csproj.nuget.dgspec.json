@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MSI USER\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj": {}
+    "C:\\Users\\MSI USER\\source\\repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MSI USER\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj": {
+    "C:\\Users\\MSI USER\\source\\repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MSI USER\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
+        "projectUniqueName": "C:\\Users\\MSI USER\\source\\repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
         "projectName": "HomeWorkProject",
-        "projectPath": "C:\\Users\\MSI USER\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
+        "projectPath": "C:\\Users\\MSI USER\\source\\repos\\Homework\\HomeWorkProject\\HomeWorkProject\\HomeWorkProject.csproj",
         "packagesPath": "C:\\Users\\MSI USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MSI USER\\Source\\Repos\\Homework\\HomeWorkProject\\HomeWorkProject\\obj\\",
+        "outputPath": "C:\\Users\\MSI USER\\source\\repos\\Homework\\HomeWorkProject\\HomeWorkProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MSI USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
