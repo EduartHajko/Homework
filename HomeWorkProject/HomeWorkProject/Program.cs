@@ -48,10 +48,6 @@ public class Kl_Task3
 
 
 
-        //Ky kodi therret zgjidhjen nga klasa solution task 1
-        //Task1.Solution();
-        //    //Homework1.Solution();
-        //    Console.WriteLine();
 
 
     }
