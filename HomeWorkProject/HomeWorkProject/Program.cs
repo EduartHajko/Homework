@@ -6,7 +6,7 @@ public class SDA
     public static void Main()
     {
         //Ky kodi therret zgjidhjen nga klasa solution task 1
-        A_S_Task4.Solution();
+        A_S_Task4.Solution2();
         //Homework1.Solution();
     }
 }

@@ -45,6 +45,36 @@ namespace HomeWorkProject
 {
     public class A_S_Task4
     {
+        public static void Solution2() // DSH
+    {
+        Console.WriteLine("Enter the numbers");
+string input = Console.ReadLine();
+        string[] array = input.Split(" ");
+        int[] numbers = new int[array.Length];
+        int length = numbers.Length;
+for (int i = 0; i<numbers.Length; i++)
+{
+    numbers[length - 1] = Convert.ToInt32(array[i]);
+
+    length--;
+}
+            foreach (int n in numbers)
+            {
+                Console.WriteLine(n);
+            }
+          
+}
+
+
+public static void Solution1() // Task 9
+        {
+            Console.WriteLine("Please enter a date:");
+                string input = Console.ReadLine();
+            DateTime date = DateTime.Parse(input);
+
+            int daysUntil = (int)Math.Ceiling(date.Subtract(DateTime.Now).TotalDays);
+            Console.WriteLine($"Days until next SDA classes: {daysUntil}");
+        }
         public static void Solution()
         {
             IDictionary<string, string> userPass = new Dictionary<string, string>();
