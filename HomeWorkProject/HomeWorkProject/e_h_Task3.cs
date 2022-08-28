@@ -115,5 +115,34 @@ namespace HomeWorkProject
 
         }
 
+
+        public static void DistionaryExercise()
+        {
+            Console.WriteLine("Enter username");
+            string input = Console.ReadLine();
+            IDictionary<string, string> usernames = new Dictionary<string, string>();
+            usernames.Add("Serin", "1234");
+            usernames.Add("Rusi", "123456");
+            usernames.Add("Oli", "12345678");
+            foreach (KeyValuePair<string, string> kvp in usernames)
+            {
+                if (kvp.Key.Equals(input))
+                {
+                    Console.WriteLine("Username is correct");
+                    Console.WriteLine("Enter Password");
+                    string pass = Console.ReadLine();
+                    foreach (KeyValuePair<string, string> a in usernames)
+                    {
+                        if (a.Value.Equals(pass))
+                        {
+                            Console.WriteLine("Password is Correct");
+                            break;
+                        }
+                    }
+                }
+            }
+
+        }
+
     }
 }
