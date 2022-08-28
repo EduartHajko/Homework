@@ -62,7 +62,7 @@ namespace HomeWorkProject
             //    Console.WriteLine(vektor[i]);
 
             //}
-            //  }
+            //}
             //}
 
 
