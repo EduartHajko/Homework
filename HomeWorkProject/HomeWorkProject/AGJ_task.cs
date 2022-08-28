@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace HomeWorkProject
 
@@ -85,13 +86,20 @@ namespace HomeWorkProject
             Console.WriteLine("Put the next date ");
 
 
+            string fieldValue = Console.ReadLine();
 
-            string nextdate = Console.ReadLine();
+            CultureInfo ItalianDate = new CultureInfo("it-IT", false);                 //shtova using globalisation
 
-            //date_timestamp = nextdate(time.strptime(date, "%d/%m/%Y"))
+            string[] formats = { "MM/dd/yyyy" };
 
-            Console.WriteLine(nextdate.Day - CurrentDate.Day);
 
+            DateTime dateValue;
+            if (DateTime.TryParseExact(fieldValue, formats, ItalianDate, DateTimeStyles.AllowWhiteSpaces, out dateValue)) ;
+
+            int daysUntil = (int)Math.Ceiling(dateValue.Subtract(CurrentDate).TotalDays);
+
+
+            Console.WriteLine("days until next course  " +  daysUntil);
 
         }
     }
