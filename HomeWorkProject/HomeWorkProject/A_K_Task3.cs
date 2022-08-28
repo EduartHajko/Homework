@@ -86,7 +86,34 @@ namespace HomeWorkProject
 
         public static void Solution4()
         {
+            Dictionary<string, string> userData = new Dictionary<string, string>();
+            userData.Add("Armir","armir2022");
+            userData.Add("Reni","reni2022");
+            userData.Add("Bledi","bledi2022");
 
+            Console.WriteLine("Input name: ");
+            String input = Console.ReadLine();
+
+            foreach (KeyValuePair<string, string> kvp in userData)
+            {
+                if (kvp.Key.Equals(input))
+                {
+                    Console.WriteLine("Username is correct");
+                    string pass = Console.ReadLine();
+                    foreach (KeyValuePair<string, string> kvn in userData)
+                    {
+                        if (kvn.Value.Equals(pass))
+                        {
+                            Console.WriteLine("Password is Correct");
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Password is INCorrect");
+                        }
+                    }
+                }
+            }
         }
 
     }
