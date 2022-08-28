@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace HomeWorkProject
@@ -142,6 +143,27 @@ namespace HomeWorkProject
                 }
             }
 
+        }
+
+
+        public static void regexExercise()
+        {
+
+            Console.WriteLine("Ju lutemi vendosni e-mail-in tuaj: ");
+            string input = Console.ReadLine();
+
+            string patterni = @"(@)";
+
+            Regex regex = new Regex(patterni);
+
+            if (regex.IsMatch(input))
+            {
+                Console.WriteLine("E-mail-i juaj eshte korrekt!");
+            }
+            else
+            {
+                Console.WriteLine("E-mail-i juaj nuk eshte korrekt!");
+            }
         }
 
     }
