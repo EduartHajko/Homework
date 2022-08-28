@@ -104,21 +104,55 @@ namespace HomeWorkProject
             }
             Console.ReadKey();
         }
-    
-
-       
 
 
 
+        public static void DistionaryExercise()
+        {
+            Console.WriteLine("Enter username");
+            string input = Console.ReadLine();
+            IDictionary<string, string> usernames = new Dictionary<string, string>();
+            usernames.Add("Serin", "1234");
+            usernames.Add("Rusi", "123456");
+            usernames.Add("Oli", "12345678");
+            usernames.Add("Denisa", "2356");
+            foreach (KeyValuePair<string, string> denisa in usernames)
+            {
+                if (denisa.Key == input)
+                {
+                    Console.WriteLine("Username is correct");
+                    Console.WriteLine("Enter Password");
+                    string pass = Console.ReadLine();
+                    foreach (KeyValuePair<string, string> a in usernames)
+                    {
+                        if (a.Value.Equals(pass))
+                        {
+                            Console.WriteLine("Password is Correct");
+                            break;
+                        }
+                    }
+                }
+            }
+
+        }
 
 
 
+        public class Task9
+        {
+            public static void Solution()
+            {
+                Console.WriteLine("Type in text");
+                string input = Console.ReadLine();
+                DateTime date = DateTime.Parse(input);
 
+                int daysUntil = (int)Math.Ceiling(date.Subtract(DateTime.Now).TotalDays);
 
+                Console.WriteLine($"Days until next SDA classes: {daysUntil}");
+            }
+        }
+     
 
-    
-    
-    
     }
                         
 }
