@@ -100,25 +100,24 @@ namespace HomeWorkProject
     //ushtrimi 5
     public static void Solution5()
     {
-        string input = Console.ReadLine();
-        IDictionary<string, string> userNames = new Dictionary<string, string>();
-        userNames.Add("Franko", "Shyti");
-        userNames.Add("John", "Doe");
-        userNames.Add("Filan", "Fisteku");
-        userNames.Add("User", "Pasword");
-        foreach (KeyValuePair<string, string> kvp in userNames)
-        {
-            if (kvp.Key.Equals(input))
+            string input = Console.ReadLine();
+            IDictionary<string, string> usernames = new Dictionary<string, string>();
+            usernames.Add("Serin", "1234");
+            usernames.Add("Rusi", "123456");
+            usernames.Add("Oli", "12345678");
+            foreach (KeyValuePair<string, string> kvp in usernames)
             {
-                Console.WriteLine("Username is correct");
-                string pass = Console.ReadLine();
-                foreach (KeyValuePair<string, string> kvn in userNames)
+                if (kvp.Key.Equals(input))
                 {
-                    if (!kvn.Value.Equals(pass))
+                    Console.WriteLine("Username is correct");
+                    string pass = Console.ReadLine();
+                    foreach (KeyValuePair<string, string> kvn in usernames)
                     {
-                        Console.WriteLine("Password is Correct");
-                        break;
-                    }
+                        if (!kvn.Value.Equals(pass))
+                        {
+                            Console.WriteLine("Password is Correct");
+                            break;
+                        }
                 }
             }
         }
@@ -126,10 +125,17 @@ namespace HomeWorkProject
     //ushtimi6
     public static void Solution6()
     {
+            Console.WriteLine("JU lutem vendosni Daten");
+            string input = Console.ReadLine();
+            DateTime date = DateTime.Parse(input);
 
+            int daysUntil = (int)Math.Ceiling(date.Subtract(DateTime.Now).TotalDays);
+
+            Console.WriteLine($"Ditet deri ne klasen e rradhes ne SDA jane: {daysUntil}");
+        }
 
     }
 }
-    }
+    
 
    
