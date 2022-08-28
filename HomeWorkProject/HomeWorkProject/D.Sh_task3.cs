@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -182,6 +183,25 @@ namespace HomeWorkProject
 
 
         }
+
+        public static void solutionParseExact()
+        {
+            string fieldValue = Console.ReadLine();
+            CultureInfo ItalianDate = new CultureInfo("it-IT", false);
+
+            string[] formats = { "dd/MM/yyyy" };
+
+
+
+            DateTime dateValue;
+            if (DateTime.TryParseExact(fieldValue, formats, ItalianDate, DateTimeStyles.AllowWhiteSpaces, out dateValue)) ;
+
+        }
+
+
+
+
+
     }
                         
 }
