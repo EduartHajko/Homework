@@ -49,7 +49,22 @@ namespace ExerciseProject.Controllers
             return Json("lista e arrayt reverse "+ st.ToString());
         }
 
+        //task 17
+        [HttpGet]
+        public IActionResult GetValuedublicate(string input , int edi)
+        {
 
+           
+            string[] inputs = input.Split(' ');
+            StringBuilder sb = new StringBuilder();
+            foreach (string word in inputs)
+            {
+                sb.Append($"{word} ");
+                sb.Append($"{word} ");
+            }
+            
+            return Json(sb.ToString());
+        }
         public IActionResult Privacy()
         {
             
