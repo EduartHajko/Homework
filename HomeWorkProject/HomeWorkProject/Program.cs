@@ -10,7 +10,7 @@ public class Kl_Task3
 
         //    //Solution.Solution1();
         //    //Solution.Solution7();
-        Solution.TaskDictionnary();
+        //Solution.TaskDictionnary();
         //}
 
         //public static void Main()

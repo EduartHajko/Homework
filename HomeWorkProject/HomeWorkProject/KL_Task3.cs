@@ -103,24 +103,36 @@ namespace HomeWorkProject
 
         //
 
-        public static void TaskDictionnary()
-        {
-            IDictionary<string, string> ditari = new Dictionary<string, string>();
-            ditari.Add("Username", "ABBA");
-            ditari.Add("Password", "Norway@12");
+        //public static void TaskDictionnary()
+        //{
+        //    IDictionary<string, string> ditari = new Dictionary<string, string>();
+        //    ditari.Add("Username", "ABBA");
+        //    ditari.Add("Password", "Norway@12");
 
-            foreach (KeyValuePair<string, string> kvp in ditari)
-            {
-                if (ditari.ContainsKey("Username"))
-                {
-                    ditari[kvp.Key] = kvp.Value;
-                }
-                Console.WriteLine(kvp.Value);
-                Console.WriteLine(kvp.Key);
-                
-            }
-                //Console.WriteLine("Key: {0}, Value: {1}", kvp.Key, kvp.Value);
+        //    foreach (KeyValuePair<string, string> kvp in ditari)
+        //    {
+        //        if (ditari.ContainsKey("Username"))
+        //        {
+        //            ditari[kvp.Key] = kvp.Value;
+        //        }
+        //        Console.WriteLine(kvp.Value);
+        //        Console.WriteLine(kvp.Key);
+
+        //    }
+        //    //Console.WriteLine("Key: {0}, Value: {1}", kvp.Key, kvp.Value);
+        //}
+
+
+        public static void DateSdaCourse()
+        {
+            string value = Console.ReadLine();
+            string input = DateTime.Now.ToString("G");
+            DateTime dateTime = new DateTime( );
+            
         }
+
     }
+
+    
 }
 
