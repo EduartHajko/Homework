@@ -66,7 +66,7 @@ namespace HomeWorkProject
             //}
 
 
-
+            //Detyra e shtepise
             int[] num = { 22, 50, 11, 2, 49 };
             Array.Reverse(num);
             for (int i = 0; i < num.Length; i++)
