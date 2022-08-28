@@ -94,6 +94,7 @@ namespace HomeWorkProject
                 }
             }      
         }
+
         //exercise 5 with daytime
         public static void Exercise5()
         {
@@ -105,5 +106,3 @@ namespace HomeWorkProject
         }
     }
 }
-
-    
