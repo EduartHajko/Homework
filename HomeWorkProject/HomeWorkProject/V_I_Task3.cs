@@ -100,27 +100,27 @@ namespace HomeWorkProject
         //}
 
         //Detyre shtepie: Write a program in C# Sharp to read n number of values in an array and display it in reverse order.
-        //mos perdorni linq commands
 
-        //public static void reverse()
-        //{
-        //    Console.WriteLine("Jepni madhesine e tables: ");
-        //    int n=Convert.ToInt32(Console.ReadLine());
 
-        //    int[] a = new int[n];
+        public static void reverse()
+        {
+            Console.WriteLine("Jepni madhesine e tables: ");
+            int n = Convert.ToInt32(Console.ReadLine());
 
-        //    for(int i=0; i<n; i++)
-        //    {
-        //        a[i] = Convert.ToInt32(Console.ReadLine());
-        //        Console.WriteLine("Vlerat e vendosura ne tabele jane: ", a[i]);
-        //    }
+            int[] a = new int[n];
 
-        //    for(int i=n-1; i>=0; i--)
-        //    {
-        //        Console.WriteLine("Tabela ne rendin e kundert: ", a[i]);
-        //    }
+            for (int i = 0; i < n; i++)
+            {
+                a[i] = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Vlerat e vendosura ne tabele jane: ", a[i]);
+            }
 
-        //}
+            for (int i = n - 1; i >= 0; i--)
+            {
+                Console.WriteLine("Tabela ne rendin e kundert: ", a[i]);
+            }
+
+        }
 
         //Ushtrim shto nje username nga console dhe verifiko nqs eshte ne dictionary ose jo(e njejte me passwordin)
 
