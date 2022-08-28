@@ -7,7 +7,7 @@ public class SDA
     {
         //Ky kodi therret zgjidhjen nga klasa solution task 1
         //Task1.Solution();
-        G_TTask3 Solution3;
+        G_TTask3 Solution4;
         //Homework1.Solution();
     }
 }

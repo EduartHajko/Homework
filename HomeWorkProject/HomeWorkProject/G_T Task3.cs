@@ -120,36 +120,26 @@ namespace HomeWorkProject
 
 
 
-        //Ushrimi 1 , Dita 2
+        //Ushrimi 2 , Dita 2
 
-        static void Solution3()
+        static void Solution4()
         {
-            string input = Console.ReadLine();
-            IDictionary<string, string> numberNames = new Dictionary<string, string>();
-            numberNames.Add("edi","123!");// adding key/value using Add() method
-            numberNames.Add("sami","555$");
-            numberNames.Add("Emma","111!");
-            numberNames.Add("Anna","232?");
-           
+            Console.WriteLine("PLease enter the exact date: ");
+        
+           DateTime  currentDateTime = DateTime.Now;
 
-            foreach (KeyValuePair<string, string> kvp in numberNames)
+            string datanext =Console.ReadLine();
+            try
             {
-                if(kvp.Key.Equals(input))
-                {
-                    Console.WriteLine("Username is correct");
-                    string pass = Console.ReadLine();
+                DateTime dateTime = DateTime.Parse(datanext);
 
-                    foreach(KeyValuePair<string, string> kvp2 in numberNames)
-                    {
-                        if(!kvp.Value.Equals(pass))
-                        {
-                            Console.WriteLine(" Password is correct :) ");
-                            break;
-                        }
-                    }
-                } 
+                Console.WriteLine("The specified date is valid: " + dateTime.Day);
             }
-                
+            catch (FormatException)
+            {
+                Console.WriteLine("Unable to parse the specified date");
+            }
+
         }
           } 
         }
