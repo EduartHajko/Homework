@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -118,20 +119,45 @@ namespace HomeWorkProject
 
         public static void Solution5()
         {
-            Console.WriteLine("PLease insert the date of the next course in format(MM/dd/yyyy): \n");
-            string nextCourseDate = Console.ReadLine();
-            DateTime enteredDate = DateTime.Parse(nextCourseDate);
 
-            Console.WriteLine("You date of the next lesson in SDA is: {0}", enteredDate);
+            try
+            {
+                Console.WriteLine("PLease insert the date of the next course in format(MM/dd/yyyy): \n");
+                string nextCourseDate = Console.ReadLine();
+                DateTime enteredDate = DateTime.Parse(nextCourseDate);
 
-            DateTime todayDate = DateTime.Today;
+                Console.WriteLine("You date of the next lesson in SDA is: {0}", enteredDate);
 
-            Console.WriteLine("The current day is: {0}", todayDate.ToString("MM/dd/yyyy"));
+                DateTime todayDate = DateTime.Today;
 
-            int daysRemaining = (enteredDate.Date - todayDate).Days;
+                Console.WriteLine("The current day is: {0}", todayDate.ToString("MM/dd/yyyy"));
 
-            Console.WriteLine("The days until the next course date are: {0}.", daysRemaining);
+                int daysRemaining = (enteredDate.Date - todayDate).Days;
 
+                Console.WriteLine("The days until the next course date are: {0}.", daysRemaining);
+            }
+            catch (Exception ex )
+            {
+
+                throw ex;
+            }
+           
+
+
+        }
+
+        //CultureInfo dates
+        public static void solutionParseExact()
+        {
+            string fieldValue = Console.ReadLine();
+            CultureInfo ItalianDate = new CultureInfo("it-IT", false);
+
+            string[] formats = { "dd/MM/yyyy"};
+
+
+
+            DateTime dateValue;
+            if (DateTime.TryParseExact(fieldValue, formats, ItalianDate, DateTimeStyles.AllowWhiteSpaces, out dateValue));
 
         }
 
