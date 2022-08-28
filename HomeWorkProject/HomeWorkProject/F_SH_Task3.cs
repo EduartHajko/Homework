@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace HomeWorkProject
 {
     public class F_SH_Task3
@@ -29,7 +28,6 @@ namespace HomeWorkProject
                 throw;
             }
         }
-
         //Ushtrimi2
         public static void Solution2()
         {
@@ -60,7 +58,6 @@ namespace HomeWorkProject
 
 
         }
-
         //ushtrimi3 
         public static void Solution3()
         {
@@ -91,10 +88,7 @@ namespace HomeWorkProject
             }
             Console.ReadKey();
         }
-
-
         //Ushtrimi4
-
         public static void Solution4()
         {
             Console.Write("Enter a name to Check Palindrome : ");
@@ -131,11 +125,6 @@ namespace HomeWorkProject
                 {
                     Console.WriteLine("Username is correct");
                     string pass = Console.ReadLine(); 
-
-                    {
-                        Console.WriteLine("Username is not correct");
-                    }
-                    
                     foreach (KeyValuePair<string, string> kvn in userNames)
                     {
                             if (!kvn.Value.Equals(pass))
@@ -147,8 +136,17 @@ namespace HomeWorkProject
                     }
                 }
             }
-        //ushtimi5
+        //ushtimi6
         public static void Solution6()
+        {
+         Console.WriteLine("Please enter a date");
+            string input = Console.ReadLine();
+            DateTime dateTime = DateTime.Parse(input);
+            int daysUntil = (int)Math.Ceiling(dateTime.Subtract(DateTime.Now).TotalDays);
+            Console.WriteLine($"Days until next SDA classes: {daysUntil}");
+        }
+        //ushtrimi7
+        public static void Solution7()
         {
 
         }
