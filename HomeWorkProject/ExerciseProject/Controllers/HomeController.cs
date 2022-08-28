@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using ExerciseProject.Services;
 using System.Text;
+using System.Linq;
 
 namespace ExerciseProject.Controllers
 {
@@ -31,9 +32,9 @@ namespace ExerciseProject.Controllers
         public IActionResult GetValueFromPostman(string parameter)
         {
 
-            // exercise
+            // exercise 1
 
-            int sum = 0;
+            /*int sum = 0;
             StringBuilder s = new StringBuilder();
             for (int i = 0; i <= 500; i++)
             {
@@ -45,7 +46,34 @@ namespace ExerciseProject.Controllers
 
             }
 
-            return Json(s.ToString() + " dhe shuma eshte: " + sum);
+            return Json(s.ToString() + " dhe shuma eshte: " + sum);*/
+
+            //exercise 2 - HOMEWORK
+
+            StringBuilder elements = new StringBuilder();
+            StringBuilder reversedElements = new StringBuilder();
+
+            Random r = new Random();
+            int arrSize = r.Next(0, 100);
+
+            int[] arr = new int[arrSize];
+
+            for (int i = 0; i <= arrSize; i++)
+            {
+                Random r2 = new Random();
+                int arrElement = r2.Next(0, arrSize);
+
+                elements.Append(arrElement + ",");
+
+            }
+
+            for (int i = elements.Length - 1; i >= 0; i--)
+            {
+                reversedElements.Append(elements[i]);
+            }
+
+
+            return Json("The random selected elements (" + arrSize + ") of the array are: " + elements.ToString() + " and the elements of the array in reversed order are: " + reversedElements.ToString());
         }
 
 

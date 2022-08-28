@@ -31,9 +31,13 @@ namespace HomeWorkProject
         //exercise:2
         public static void Solution2()
         {
-            int[] arr = new int[4];
+            Console.WriteLine("Please input the nr of elements you want the array to have: ");
+            string sSize = Console.ReadLine();
+            int arrSize = Convert.ToInt32(sSize);
+            int[] arr = new int[arrSize];
+            
 
-            Console.WriteLine("Input 10 elements in the array :\n");
+            Console.WriteLine("Input " + arrSize + " elements in the array :\n");
             
 
             for (int i = 0; i < arr.Length; i++)
@@ -47,6 +51,13 @@ namespace HomeWorkProject
             for (int i = 0; i < arr.Length; i++)
             {
                 Console.WriteLine(arr[i] + "\n");                   
+            }
+
+            Console.WriteLine("\nElements in array displayed in reverse order are: ");
+
+            for (int i = arr.Length - 1; i >= 0; i--)
+            {
+                Console.WriteLine(arr[i] + "\n");
             }
         }
 
@@ -71,6 +82,11 @@ namespace HomeWorkProject
                 }
             }
             
+        }
+
+        public static void Solution4()
+        {
+
         }
 
     }
