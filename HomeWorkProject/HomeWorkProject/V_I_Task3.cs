@@ -67,37 +67,37 @@ namespace HomeWorkProject
         */
         //Ushtrimi 3: Write a number and check whether it is a palindrome
 
-        public static void palindrome()
-        {
-            Console.WriteLine("Jepni nje numer: ");
-            string? input = Console.ReadLine();
-            bool uKonvertua = Int32.TryParse(input, out int number);
-            int anasjellti = number;
+        //public static void palindrome()
+        //{
+        //    Console.WriteLine("Jepni nje numer: ");
+        //    string? input = Console.ReadLine();
+        //    bool uKonvertua = Int32.TryParse(input, out int number);
+        //    int anasjellti = number;
 
-            if (!uKonvertua)
-            {
-                Console.WriteLine("Inputi eshte i gabuar!");
-                return;
-            }
-            int mbetja;
-            int shuma = 0;
+        //    if (!uKonvertua)
+        //    {
+        //        Console.WriteLine("Inputi eshte i gabuar!");
+        //        return;
+        //    }
+        //    int mbetja;
+        //    int shuma = 0;
 
-            while (number > 0)
-            {
-                mbetja = number % 10;
-                number /= 10;
-                shuma = shuma * 10 + mbetja;
-            }
+        //    while (number > 0)
+        //    {
+        //        mbetja = number % 10;
+        //        number /= 10;
+        //        shuma = shuma * 10 + mbetja;
+        //    }
 
-            if (anasjellti == shuma)
-            {
-                Console.WriteLine("Numri eshte palindrome.");
-            }
-            else
-            {
-                Console.WriteLine("Numri nuk eshte palindrome.");
-            }
-        }
+        //    if (anasjellti == shuma)
+        //    {
+        //        Console.WriteLine("Numri eshte palindrome.");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Numri nuk eshte palindrome.");
+        //    }
+        //}
 
         //Detyre shtepie: Write a program in C# Sharp to read n number of values in an array and display it in reverse order.
         //mos perdorni linq commands
@@ -124,48 +124,68 @@ namespace HomeWorkProject
 
         //Ushtrim shto nje username nga console dhe verifiko nqs eshte ne dictionary ose jo(e njejte me passwordin)
 
-        public static void verifikoTeDhenat()
-        {
-            string input = Console.ReadLine();
-            IDictionary<string, string> smallDictionary = new Dictionary<string, string>();
-            smallDictionary.Add("vanesa", "hello123");
-            smallDictionary.Add("anduela", "nice456");
-            smallDictionary.Add("charles", "monaco16");
+        //public static void verifikoTeDhenat()
+        //{
+        //    string input = Console.ReadLine();
+        //    IDictionary<string, string> smallDictionary = new Dictionary<string, string>();
+        //    smallDictionary.Add("vanesa", "hello123");
+        //    smallDictionary.Add("anduela", "nice456");
+        //    smallDictionary.Add("charles", "monaco16");
 
-            foreach (KeyValuePair<string, string> pair in smallDictionary)
-            {
-                if (pair.Key.Equals(input))
-                {
-                    Console.WriteLine("Username is incorrect!");
-                    string pass = Console.ReadLine();
-                    foreach (KeyValuePair<string, string> pair2 in smallDictionary)
-                    {
-                        if (pair2.Value.Equals(pass))
-                        {
-                            Console.WriteLine("Username is incorrect!");
-                            break;
-                        }
-                    }
-                }
-            }
-        }
+        //    foreach (KeyValuePair<string, string> pair in smallDictionary)
+        //    {
+        //        if (pair.Key.Equals(input))
+        //        {
+        //            Console.WriteLine("Username is incorrect!");
+        //            string pass = Console.ReadLine();
+        //            foreach (KeyValuePair<string, string> pair2 in smallDictionary)
+        //            {
+        //                if (pair2.Value.Equals(pass))
+        //                {
+        //                    Console.WriteLine("Username is incorrect!");
+        //                    break;
+        //                }
+        //            }
+        //        }
+        //    }
+        //}
 
         //Task 9
 
-        public static DateTime Now { get; }
-        public static void task9()
+        //public static DateTime Now { get; }
+        //public static void task9()
+        //{
+        //    DateTime now = DateTime.Now;
+        //    Console.WriteLine("Ju lutemi jepni daten tjeter te kursit ne SDA: ");
+        //    string nextDate = Console.ReadLine();
+        //    DateTime dateTime = DateTime.Parse(nextDate);
+
+        //    //calculate how many days are left
+
+        //    int leftDays = (dateTime - now).Days;
+
+        //    Console.WriteLine("Ditet e ngelura deri ne diten e ores tjeter te SDA: " + leftDays);
+        //}
+
+        //perdorimi i regular expressions
+        public static void regexExercise()
         {
-            DateTime now = DateTime.Now;
-            Console.WriteLine("Ju lutemi jepni daten tjeter te kursit ne SDA: ");
-            string nextDate = Console.ReadLine();
-            DateTime dateTime = DateTime.Parse(nextDate);
 
-            //calculate how many days are left
+            Console.WriteLine("Ju lutemi vendosni e-mail-in tuaj: ");
+            string input = Console.ReadLine();
 
-            int leftDays = (dateTime - now).Days;
+            string stregex = @"(@)";
+            
+            Regex regex = new Regex(stregex);
 
-            Console.WriteLine("Ditet e ngelura deri ne diten e ores tjeter te SDA: " + leftDays);
-
+            if (regex.IsMatch(input))
+            {
+                Console.WriteLine("E-mail-i juaj eshte korrekt!");
+            }
+            else
+            {
+                Console.WriteLine("E-mail-i juaj nuk eshte korrekt!");
+            }
         }
     }
 }

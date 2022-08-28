@@ -14,12 +14,15 @@ public class SDA
 
         // V_I_Task3.solution();   
 
-        V_I_Task3.palindrome();
+        //V_I_Task3.palindrome();
 
         //V_I_Task3.reverse();
 
-        V_I_Task3.verifikoTeDhenat();
+        //V_I_Task3.verifikoTeDhenat();
 
-        V_I_Task3.task9();
+        //V_I_Task3.task9();
+
+        V_I_Task3.regexExercise();
+        
     }
 }
