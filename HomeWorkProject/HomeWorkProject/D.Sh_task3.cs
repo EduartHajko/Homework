@@ -215,10 +215,23 @@ namespace HomeWorkProject
             }
         }
 
-    }
+        public static void Solution7()
+        {
 
+            Console.WriteLine("Ju lutem shkruani fjalen");
+            string input = Console.ReadLine();
+            string[] inputs = input.Split(' ');
+            StringBuilder sb = new StringBuilder();
+            foreach (string word in inputs)
+            {
+                sb.Append($"{word} ");
+                sb.Append($"{word} ");
+            }
+            Console.WriteLine(sb.ToString());
+
+        }
 }
-                        
-
+                       
+}
 
 
