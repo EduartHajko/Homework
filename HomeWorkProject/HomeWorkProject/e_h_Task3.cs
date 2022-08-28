@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -167,7 +168,33 @@ namespace HomeWorkProject
         }
 
 
+        public static void parsedateTime()
+        {
 
+            DateTime CurrentDate = DateTime.Now;
+
+
+            Console.WriteLine("The current date is: " + CurrentDate);
+
+
+            Console.WriteLine("Put the next date ");
+
+
+            string fieldValue = Console.ReadLine();
+
+            CultureInfo ItalianDate = new CultureInfo("it-IT", false);                 //shtova using globalisation
+
+            string[] formats = { "MM/dd/yyyy" };
+
+
+            DateTime dateValue;
+            if (DateTime.TryParseExact(fieldValue, formats, ItalianDate, DateTimeStyles.AllowWhiteSpaces, out dateValue)) ;
+
+            int daysUntil = (int)Math.Ceiling(dateValue.Subtract(CurrentDate).TotalDays);
+
+
+            Console.WriteLine("days until next course  " + daysUntil);
+        }
 
 
     }
