@@ -74,36 +74,54 @@ namespace HomeWorkProject
             //{
             //    Console.Write(num[i] + " ");
             //}
-           
-            
-            
-            DateTime CurrentDate = DateTime.Now;
-
-           
-            Console.WriteLine("The current date is: " + CurrentDate);
-            
-            
-            Console.WriteLine("Put the next date ");
 
 
-            string fieldValue = Console.ReadLine();
 
-            CultureInfo ItalianDate = new CultureInfo("it-IT", false);                 //shtova using globalisation
-
-            string[] formats = { "MM/dd/yyyy" };
+            //DateTime CurrentDate = DateTime.Now;
 
 
-            DateTime dateValue;
-            if (DateTime.TryParseExact(fieldValue, formats, ItalianDate, DateTimeStyles.AllowWhiteSpaces, out dateValue)) ;
-
-            int daysUntil = (int)Math.Ceiling(dateValue.Subtract(CurrentDate).TotalDays);
+            //Console.WriteLine("The current date is: " + CurrentDate);
 
 
-            Console.WriteLine("days until next course  " +  daysUntil);
+            //Console.WriteLine("Put the next date ");
 
+
+            //string fieldValue = Console.ReadLine();
+
+            //CultureInfo ItalianDate = new CultureInfo("it-IT", false);                 //shtova using globalisation
+
+            //string[] formats = { "MM/dd/yyyy" };
+
+
+            //DateTime dateValue;
+            //if (DateTime.TryParseExact(fieldValue, formats, ItalianDate, DateTimeStyles.AllowWhiteSpaces, out dateValue)) ;
+
+            //int daysUntil = (int)Math.Ceiling(dateValue.Subtract(CurrentDate).TotalDays);
+
+
+            //Console.WriteLine("days until next course  " +  daysUntil);
+
+
+            Console.WriteLine("Shkruaj nje fjali : ");
+            string input = Console.ReadLine();
+            string[] inputs = input.Split(' ');
+
+            StringBuilder sb = new StringBuilder();
+
+            foreach (string word in inputs)
+            {
+                sb.Append($"{word} ");
+                sb.Append($"{word} ");
+            }
+
+            Console.WriteLine(sb.ToString());
         }
     }
 }
+
+
+
+
 
 
 
