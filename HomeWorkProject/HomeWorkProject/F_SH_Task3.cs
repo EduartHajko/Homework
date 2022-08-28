@@ -177,7 +177,7 @@ namespace HomeWorkProject
 
 
         }
-
+        //Ushtrimi8
         //CultureInfo dates
         public static void solutionParseExact()
         {
@@ -192,7 +192,7 @@ namespace HomeWorkProject
             if (DateTime.TryParseExact(fieldValue, formats, ItalianDate, DateTimeStyles.AllowWhiteSpaces, out dateValue)) ;
 
         }
-
+        //Ushtrimi9
         public static void Solution9()
         {
             Console.WriteLine("Ju lutem vendosni emailin tuaj");
@@ -208,7 +208,59 @@ namespace HomeWorkProject
                 Console.WriteLine("Emaili juaj nuk eshte i sakte");
             }
         }
+        //Ushtrimi10
+        public static void Solution10()
+        {
+
+            Console.WriteLine("Please input the nr of elements you want the array to have: ");
+            string sSize = Console.ReadLine();
+            int arrSize = Convert.ToInt32(sSize);
+            int[] arr = new int[arrSize];
+
+
+            Console.WriteLine("Input " + arrSize + " elements in the array :\n");
+
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine("Element with index - {0} : ", i);
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine("\nElements in array are: ");
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine(arr[i] + "\n");
+            }
+
+            Console.WriteLine("\nElements in array displayed in reverse order are: ");
+
+            for (int i = arr.Length - 1; i >= 0; i--)
+            {
+                Console.WriteLine(arr[i] + "\n");
+            }
+        }
+        //Ushtrimi11
+        public static void Solution11()
+        {
+            Console.WriteLine("Type in text");
+            string input = Console.ReadLine();
+            string[] inputs = input.Split(' ');
+
+            StringBuilder sb = new StringBuilder();
+
+            foreach (string word in inputs)
+            {
+                sb.Append($"{word} ");
+                sb.Append($"{word} ");
+            }
+
+            Console.WriteLine(sb.ToString());
+        }
     }
 }
+   
+
    
    
