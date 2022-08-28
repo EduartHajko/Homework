@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Text.Json.Nodes;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace HomeWorkProject
@@ -92,7 +95,7 @@ namespace HomeWorkProject
                         }
                     }
                 }
-            }      
+            }
         }
 
         //exercise 5 with daytime
@@ -100,11 +103,58 @@ namespace HomeWorkProject
         {
             Console.WriteLine("Please enter a date");
             string input = Console.ReadLine();
-            DateTime dateTime=DateTime.Parse(input);
-            int daysUntil=(int)Math.Ceiling(dateTime.Subtract(DateTime.Now).TotalDays);
+            DateTime dateTime = DateTime.Parse(input);
+            int daysUntil = (int)Math.Ceiling(dateTime.Subtract(DateTime.Now).TotalDays);
             Console.WriteLine($"Days until the next SDA classes: {daysUntil}");
+        }
+        //exercise 6 with regex
+        public static void Exercise6()
+        {
+            Console.WriteLine("Type in a password");
+            string input = Console.ReadLine();
+            Regex numbers = new Regex("\\d");
+            Regex capitalLetters = new Regex("[A-Z]");
+            Regex lowercaseLetters = new Regex("[a-z]");
+            Regex specials = new Regex("[$#@!%^&*]");
+            bool isGoodPassword = true;
+            if (numbers.Matches(input).Count < 4) isGoodPassword = false;
+            if (capitalLetters.Matches(input).Count < 2) isGoodPassword = false;
+            if (lowercaseLetters.Matches(input).Count < 6) isGoodPassword = false;
+            if (specials.Matches(input).Count < 1) isGoodPassword = false;
+            Console.WriteLine(isGoodPassword ? $"{input} is a good password" : $"{input} is NOT a good password");
+        }
+        //bonus exercise
+        public static void regexExercise()
+        {
+            Console.WriteLine("Ju lutemi vendosni e-mail-in tuaj: ");
+            string input = Console.ReadLine();
+            string stregex = @"(@)";
+            Regex regex = new Regex(stregex);
+            if (regex.IsMatch(input))
+            {
+                Console.WriteLine("E-mail-i juaj eshte korrekt!");
+            }
+            else
+            {
+                Console.WriteLine("E-mail-i juaj nuk eshte korrekt!");
+            }
+        }
+        //homework exercise
+
+        //exercise for a stuttering application
+        public static void Exercise7()
+        {
+            Console.WriteLine("Insert text here");
+            string input = Console.ReadLine();
+            string[] inputs = input.Split(' ');
+            StringBuilder sb = new StringBuilder();
+            foreach (string word in inputs)
+            {
+                sb.Append(word);
+                sb.Append(word);
+            }
+            Console.WriteLine(sb.ToString());
         }
     }
 }
-
     
