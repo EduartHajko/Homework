@@ -80,5 +80,43 @@ namespace TestProjectHomeWork
 
             Assert.IsTrue(fromcall);
         }
+
+        [TestMethod]
+
+        public void TestIfIsFibonnaci()
+        {
+            K_L_ClassToTest test = new K_L_ClassToTest();
+
+            //E thirra klasën Fibonnaci
+            int fib = test.Fibonacci(4);
+
+            try
+            {
+                test.Fibonacci(-4);   
+            }
+            catch (ArgumentNullException)
+            {
+                TestContext.WriteLine("//test was successfull and it throw exception");
+                return;
+            }
+
+            Assert.Fail("Call to method did not throw an exception");
+            
+        }
+        public void copyFileIntoPath(string fileToCopyPath, string targetFolderPath)
+        {
+            {
+                if (!File.Exists(fileToCopyPath))
+                    throw new FileNotFoundException("Can't find file to copy");
+                if (!Directory.Exists(targetFolderPath))
+                    throw new DirectoryNotFoundException("Can't find target folder!");
+                var fileName = Path.GetFileName(fileToCopyPath);
+                if (Directory.EnumerateFiles(targetFolderPath).Contains(fileName))
+                    throw new Exception("File already exists at the target destination!");
+                File.Copy(fileToCopyPath, $"{targetFolderPath}/{fileName}");
+            }
+
+        }
+
     }
 }

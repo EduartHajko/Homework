@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -27,6 +28,38 @@ namespace HomeWorkProject
             return result;
         }
 
+        public  int Fibonacci(int index)
+        {
+            if (index == 0)
+                return 0;
+            if (index == 1)
+                return 1;
+            return Fibonacci(index - 1) + Fibonacci(index - 2);
+
+        }
+        public int FibonacciTest(int index)
+        {
+            try
+            {
+                if (index == 0)
+                    return 0;
+                if (index == 1)
+                    return 1;
+                var response = FibonacciTest(index - 1) + FibonacciTest(index - 2);
+                return response;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public bool copyFileIntoPath(string path)
+        {
+            bool result = false;
+
+            return result;
+        }
 
     }
 }
