@@ -1,3 +1,4 @@
+using HomeWorkProject;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TestProjectHomework
@@ -8,6 +9,9 @@ namespace TestProjectHomework
         [TestMethod]
         public void TestMethod1()
         {
+            E_H_ClassToTest test = new E_H_ClassToTest();
+            test.FileExists("");
+
         }
     }
 }
