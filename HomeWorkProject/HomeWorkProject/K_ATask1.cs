@@ -30,6 +30,11 @@ namespace HomeWorkProject
             throw new NotImplementedException();
         }
 
+        internal static void solution1()
+        {
+            throw new NotImplementedException();
+        }
+
         public static void solution2()
         {
             int[] arr = new int[10];
