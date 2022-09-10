@@ -28,15 +28,49 @@ namespace HomeWorkProject
             return result;
         }
 
-        public static int Fibonacci(int index)
+        public  int Fibonacci(int index)
+        {         
+                if (index == 0)
+                    return 0;
+
+                if (index == 1)
+                    return 1;
+
+                var response = Fibonacci(index - 1) + Fibonacci(index - 2);
+              
+                return response;
+        }
+
+        public void copyFileIntoPath(string fileToCopyPath, string targetFolderPath)
         {
-            if (index == 0)
-                return 0;
+            var fileName = Path.GetFileName(fileToCopyPath);
+            string dest = $"{targetFolderPath}/{fileName}";
+            try
+            {
+                if (!File.Exists(fileToCopyPath))
+                    throw new FileNotFoundException("Can't find file to copy");
 
-            if (index == 1)
-                return 1;
+                if (!Directory.Exists(targetFolderPath))
+                    throw new DirectoryNotFoundException("Can't find target folder!");
 
-            return Fibonacci(index - 1) + Fibonacci(index - 2);
+               
+
+                if (Directory.EnumerateFiles(targetFolderPath).Contains(fileName))
+                    throw new Exception("File already exists at the target destination!");
+
+               
+
+                File.Copy(fileToCopyPath, dest);
+
+                //fr44gi
+
+            }
+            catch (Exception ex )
+            {
+                File.Copy(dest, fileToCopyPath);
+                File.Delete(dest);    
+                throw ex ;
+            }
         }
 
     }
