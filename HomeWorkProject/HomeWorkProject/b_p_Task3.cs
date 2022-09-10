@@ -47,20 +47,20 @@ namespace HomeWorkProject
         //28-08-2022
         //Ushtrimi 1 - Dictionary
 
-        public static void Dictionary()
-        {
-            IDictionary<string, string> userPass = new Dictionary<string, string>();
-            userPass.Add("Bledi", "1234"); //adding a key/value using the Add() method
-            userPass.Add("Amir", "5678");
-            userPass.Add("Reni", "98174");
+        //public static void Dictionary()
+        //{
+        //    IDictionary<string, string> userPass = new Dictionary<string, string>();
+        //    userPass.Add("Bledi", "1234"); //adding a key/value using the Add() method
+        //    userPass.Add("Amir", "5678");
+        //    userPass.Add("Reni", "98174");
 
-            foreach (KeyValuePair<string, string> kvp in userPass)
-                if
-                {
-                    Console.WriteLine("Key: {0}, Value: {1}", kvp.Key, kvp.Value);
-                }
+        //    foreach (KeyValuePair<string, string> kvp in userPass)
+        //        if
+        //        {
+        //            Console.WriteLine("Key: {0}, Value: {1}", kvp.Key, kvp.Value);
+        //        }
                 
-        }
+        //}
 
     }
 }
