@@ -15,7 +15,17 @@ namespace HomeWorkProject
                 throw new ArgumentNullException("filename");
             }
 
-            return File.Exists(fileName);
+            var result=File.Exists(fileName);
+
+            return result;
+        }
+
+        public bool StringCompare(string stringName1,string  stringName2)
+        {
+            bool result = false;
+            if (stringName1.ToLower().Equals(stringName2.ToLower()))
+                result = true;
+            return result;
         }
 
     }
