@@ -61,5 +61,19 @@ namespace TestProjectHomework
                 result = true;
             return result;
         }
+
+        [TestMethod]
+        public void FibonacciEXE()
+        {
+            B_P_ClassToTest test = new B_P_ClassToTest();
+            try
+            {
+                test.Fibonacci(-1);
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+
+            }
+        }
     }
 }
