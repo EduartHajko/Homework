@@ -1,3 +1,4 @@
+using System.Security.Cryptography.X509Certificates;
 using HomeWorkProject;
 using TestProjectHomeWork;
 
@@ -63,6 +64,21 @@ namespace TestProjectHomeWork
             string st2 = "Edit";
 
             Assert.AreEqual(st1,st2, true);
+        }
+        [TestMethod]
+        public void AreEqualStrings()
+        {
+            K_L_ClassToTest test = new K_L_ClassToTest();
+            //Assert.Inconclusive();
+            TestContext.WriteLine("keni aksesuar klasën me sukses");
+
+            bool fromcall;
+
+            fromcall = test.StringCompare("edi", "Edi");
+            TestContext.WriteLine("kemi aksesuar metodën me sukses");
+
+
+            Assert.IsTrue(fromcall);
         }
     }
 }
