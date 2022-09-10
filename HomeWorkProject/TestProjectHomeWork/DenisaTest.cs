@@ -69,5 +69,13 @@ namespace TestProjectHomeWork
             TestContext.WriteLine("kemi aksesuar metoden me sukses");
             Assert.IsTrue(fromcall);
         }
+        [TestMethod]
+       public void TestiFisFibonacci()
+        {
+            D_Sh_ClassToTest test = new D_Sh_ClassToTest();
+            int fib = test.Fibonacci(4);
+            Assert.AreEqual(3, fib);
+        }
+
     }
     }
