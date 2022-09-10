@@ -47,15 +47,15 @@ namespace TestProjectHomeWork
                 TestContext.WriteLine("test was succesful it throw exeption");
                 return;
             }
-                Assert.Fail("Call to method did not throw an exeption");
+            Assert.Fail("Call to method did not throw an exeption");
 
-            }
+        }
         [TestMethod]
         public void StringIsEqualOrNot()
         {
             string str1 = "franko";
             string str2 = "Franko";
-            Assert.AreEqual(str1 , str2, true);
+            Assert.AreEqual(str1, str2, true);
         }
         [TestMethod]
         public void AreEqualsStrings()
@@ -67,5 +67,34 @@ namespace TestProjectHomeWork
             TestContext.WriteLine("kemi aksesuar metoden me sukses");
             Assert.IsTrue(fromcall);
         }
+
+        //public void TestFibonacci()
+        //{
+        //    Assert.AreEqual(0, F_SH_ToTest.Fibonacci(0));
+        //    Assert.AreEqual(1,F_SH_ToTest.Fibonacci(1));
+        //    Assert.AreEqual(7,F_SH_ToTest.Fibonacci(13));
+        //    Assert.ThrowsException<Exception>(() => { F_SH_ToTest.Fibonacci(-1); });
+        //    Assert.ThrowsException<Exception>(() => { F_SH_ToTest.Fibonacci(int.MaxValue); });
+        //    Assert.Inconclusive();
+        //}
+        [TestMethod]
+        public void TestifFibonacci()
+        {
+            F_SH_ToTest test = new F_SH_ToTest();
+            int fib = test.Fibonacci(4);
+            Assert.AreEqual(3, fib);
+        }
+
+        [TestMethod]
+        public void FileProperlyCopied()
+        {
+            var fileStream = File.Create("properFilePath.txt");
+            fileStream.Dispose();
+            var directoryInfo = Directory.CreateDirectory("validDirectory");
+            var targetPath = Path.Combine(directoryInfo.FullName, fileStream.Name);
+            File.Delete(targetPath);          
+            Assert.IsTrue(File.Exists(targetPath));
+        }
     }
     }
+
