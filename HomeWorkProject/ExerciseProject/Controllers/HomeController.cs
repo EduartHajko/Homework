@@ -33,7 +33,7 @@ namespace ExerciseProject.Controllers
 
 
         [HttpGet]
-        public IActionResult GetValueFromPostman(string parameter)
+        public IActionResult GetValuedublicate(string input)
         {
 
              static void Main()
