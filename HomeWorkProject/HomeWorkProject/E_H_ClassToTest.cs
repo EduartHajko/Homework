@@ -29,8 +29,7 @@ namespace HomeWorkProject
         }
 
         public  int Fibonacci(int index)
-        {
-            
+        {         
                 if (index == 0)
                     return 0;
 
@@ -40,7 +39,38 @@ namespace HomeWorkProject
                 var response = Fibonacci(index - 1) + Fibonacci(index - 2);
               
                 return response;
-           
+        }
+
+        public void copyFileIntoPath(string fileToCopyPath, string targetFolderPath)
+        {
+            var fileName = Path.GetFileName(fileToCopyPath);
+            string dest = $"{targetFolderPath}/{fileName}";
+            try
+            {
+                if (!File.Exists(fileToCopyPath))
+                    throw new FileNotFoundException("Can't find file to copy");
+
+                if (!Directory.Exists(targetFolderPath))
+                    throw new DirectoryNotFoundException("Can't find target folder!");
+
+               
+
+                if (Directory.EnumerateFiles(targetFolderPath).Contains(fileName))
+                    throw new Exception("File already exists at the target destination!");
+
+               
+
+                File.Copy(fileToCopyPath, dest);
+
+                //fr44gi
+
+            }
+            catch (Exception ex )
+            {
+                File.Copy(dest, fileToCopyPath);
+                File.Delete(dest);    
+                throw ex ;
+            }
         }
 
     }

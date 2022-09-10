@@ -1,6 +1,7 @@
 using HomeWorkProject;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.IO;
 
 namespace TestProjectHomework
 {
@@ -120,11 +121,51 @@ namespace TestProjectHomework
         {
             E_H_ClassToTest test = new E_H_ClassToTest();
 
-
    Assert.ThrowsException<ArgumentOutOfRangeException>(() => { test.Fibonacci(-1); });
 
 
+        }
 
+
+        [TestMethod]
+        public void FileNotExistsException()
+        {
+            E_H_ClassToTest test = new E_H_ClassToTest();
+            Assert.ThrowsException<FileNotFoundException>(() => test.copyFileIntoPath("invalidPath", null));
+        }
+
+        [TestMethod]
+        public void TargetDestinationNotExistsException()
+        {
+            E_H_ClassToTest test = new E_H_ClassToTest();
+            File.Create("properFilePath.txt");
+            Assert.ThrowsException<DirectoryNotFoundException>(() => test.copyFileIntoPath("properFilePath.txt", "invalid directory path"));
+        }
+
+        [TestMethod]
+        public void TargetFileAlreadyExistsException()
+        {
+            E_H_ClassToTest test = new E_H_ClassToTest();
+            var fileStream = File.Create("properFilePath.txt");
+            fileStream.Dispose();
+            var directoryInfo = Directory.CreateDirectory("validDirectory");
+            var targetPath = Path.Combine(directoryInfo.FullName, fileStream.Name);
+            var targetFile = File.Create(targetPath);
+            targetFile.Dispose();
+
+            Assert.ThrowsException<IOException>(() => test.copyFileIntoPath("properFilePath.txt", directoryInfo.FullName));
+        }
+
+        [TestMethod]
+        public void FileProperlyCopied()
+        {
+            var fileStream = File.Create("properFilePath.txt");
+            fileStream.Dispose();
+            var directoryInfo = Directory.CreateDirectory("validDirectory");
+            var targetPath = Path.Combine(directoryInfo.FullName, fileStream.Name);
+            File.Delete(targetPath);
+           
+            Assert.IsTrue(File.Exists(targetPath));
         }
 
 
