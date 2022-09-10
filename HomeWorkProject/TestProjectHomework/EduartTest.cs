@@ -81,9 +81,50 @@ namespace TestProjectHomework
 
 
         [TestMethod]
-        public void TestFibonaci()
+        public void TestifisFibonaci()
         {
-            Assert.Inconclusive();
+            E_H_ClassToTest test = new E_H_ClassToTest();
+           
+          int fib= test.Fibonacci(4);
+
+            Assert.AreEqual(3, fib);
+
+        }
+
+        //menyra e pare per te testuar exception
+        [TestMethod]
+        public void TestFibonaciEXE()
+        {
+            E_H_ClassToTest test = new E_H_ClassToTest();
+            try
+            {
+                test.Fibonacci(-1);
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+               
+                TestContext.WriteLine("//test was sucess it throw exception");
+                return;
+            }
+
+            Assert.Fail("call to method did not throw an exception");
+
+
+
+        }
+
+
+        //menyra e dyte per te testuar exception
+        [TestMethod]
+        public void TestFibonaciEXE2()
+        {
+            E_H_ClassToTest test = new E_H_ClassToTest();
+
+
+   Assert.ThrowsException<ArgumentOutOfRangeException>(() => { test.Fibonacci(-1); });
+
+
+
         }
 
 
