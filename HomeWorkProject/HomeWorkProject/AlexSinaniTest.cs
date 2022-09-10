@@ -4,17 +4,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HomeWorkProject
+namespace HomeWorkProject;
+public class AlexSinaniTest
 {
-    public class AlexSinaniTest
+    public bool StringCompare(string stringName1, string stringName2)
     {
-        public bool FileExists(string fileName)
+        if (stringName1.Equals(stringName2))
+            return true;
+        else
         {
-            if (string.IsNullOrEmpty(fileName))
-            {
-                throw new ArgumentNullException("filename");
-            }
-            return File.Exists(fileName);
+            return false;
         }
+    }
+
+
+    public static int Fibonacci(int index)
+    {
+        if (index == 0)
+            return 0;
+        if (index == 1)
+            return 1;
+        return Fibonacci(index - 1) + Fibonacci(index - 2);
+    }
+
+    public object Fibonacci()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void FileExists(object value)
+    {
+        throw new NotImplementedException();
     }
 }

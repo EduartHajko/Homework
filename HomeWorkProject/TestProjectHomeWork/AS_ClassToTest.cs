@@ -14,7 +14,7 @@ namespace TestProjectHomeWork
             AlexSinaniTest test = new AlexSinaniTest();
             TestContext.WriteLine("Kemi aksesuar klasen me sukses:");
             bool fromcall;
-            fromcall = test.FileExists(@"C:\Windows\kridens.exe");
+            fromcall = test.filExists(@"C:\Windows\kridens.exe");
             TestContext.WriteLine("Kemi aksesuar metoden me sukses:");
 
             Assert.IsFalse(fromcall);
@@ -63,6 +63,24 @@ namespace TestProjectHomeWork
 
             Assert.AreEqual(st1, st2);
         }
+        [TestMethod]
+        public bool StringCompare(string stringName1, string stringName2)
+        {
+            bool result = false;
+            if (stringName1.ToLower().Equals(stringName2.ToLower()))
+                result = true;
+            return result;
+        }
+
+        [TestMethod]
+        public void TestIfIsFibonnaci()
+        {
+            AlexSinaniTest test = new AlexSinaniTest();
+            //therrasim klasen fibonnaci
+
+            int fib = test.Fibonacci(4);
+        }
+
     }
 }
 
