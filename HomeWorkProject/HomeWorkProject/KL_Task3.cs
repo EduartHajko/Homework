@@ -76,31 +76,28 @@ namespace HomeWorkProject
 
         //    //}
 
-        //    //public static void Solution7()
-        //    //{
-        //    //    string value, reversedValue = "";
-        //    //    Console.Write("Enter a string : ");
-        //    //    value = Console.ReadLine();
-        //    //    if (value != null)
-        //    //    {
-        //    //        for (int i = value.Length - 1; i >= 0; i--)
-        //    //        {
-        //    //            reversedValue += value[i].ToString();
-        //    //        }
-        //    //        if (reversedValue == value)
-        //    //        {
-        //    //            Console.WriteLine("String is a Palindrome String: {0} and Reversed String is: {1}", value, reversedValue);
-        //    //        }
-        //    //        else
-        //    //        {
-        //    //            Console.WriteLine("String is not a Palindrome String: {0} and Reversed String: {1}", value, reversedValue);
-        //    //        }
-        //    //    }
+        //public static void Solution7()
+        //{
+        //    string value, reversedValue = "";
+        //    Console.Write("Enter a string : ");
+        //    value = Console.ReadLine();
+        //    if (value != null)
+        //    {
+        //        for (int i = value.Length - 1; i >= 0; i--)
+        //        {
+        //            reversedValue += value[i].ToString();
+        //        }
+        //        if (reversedValue == value)
+        //        {
+        //            Console.WriteLine("String is a Palindrome String: {0} and Reversed String is: {1}", value, reversedValue);
+        //        }
+        //        else
+        //        {
+        //            Console.WriteLine("String is not a Palindrome String: {0} and Reversed String: {1}", value, reversedValue);
+        //        }
+        //    }
 
-        //    //}
-
-
-
+        //}
         //
 
         //public static void TaskDictionnary()
@@ -123,16 +120,51 @@ namespace HomeWorkProject
         //}
 
 
-        public static void DateSdaCourse()
-        {
-            string value = Console.ReadLine();
-            string input = DateTime.Now.ToString("G");
-            DateTime dateTime = new DateTime( );
-            
-        }
+        //        public static void DateSdaCourse()
+        //        {
+        //            string value = Console.ReadLine();
+        //            string input = DateTime.Now.ToString("G");
+        //            DateTime dateTime = new DateTime( );
+
+        //        }
+
+        //        public static void regexExercice()
+        //        {
+        //            Console.WriteLine("Fusni emailin tuaj :");
+        //            string input = Console.ReadLine();
+        //            string paterni = @"(@)";
+
+        //            Regex regex = new Regex(paterni);
+        //            if (regex.isMatch(input))
+        //            {
+        //                Console.WriteLine("Email Ok");
+        //            }
+        //            else
+        //            {
+        //                Console.WriteLine("Email not Ok");
+        //            }
+
+        //public static void DoubleCross()
+        //{
+        //    Console.WriteLine("Please write a statement:");
+        //    string input = Console.ReadLine();
+
+
+        //    string[] words = input.Split(" ");
+
+
+        //    foreach (string word in words)
+        //    {
+        //        Console.Write(word + " " + word + " ");
+        //    }
+
+
+        //}
+
+
 
     }
-
-    
+    public class Solution1
+    {
+    }
 }
-
