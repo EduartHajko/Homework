@@ -80,5 +80,12 @@ namespace TestProjectHomework
         }
 
 
+        [TestMethod]
+        public void TestFibonaci()
+        {
+            Assert.Inconclusive();
+        }
+
+
     }
 }
