@@ -5,6 +5,6 @@ public class SDA
 {
     static void Main()
     {
-        F_SH_Task3.Solution11();
+        F_SH_Task3.Solution6();
     }
 }

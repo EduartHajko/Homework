@@ -244,7 +244,7 @@ namespace HomeWorkProject
         //Ushtrimi11
         public static void Solution11()
         {
-            Console.WriteLine("Type in text");
+            Console.WriteLine("Ju lutem shkruani fjalen");
             string input = Console.ReadLine();
             string[] inputs = input.Split(' ');
 
@@ -258,9 +258,7 @@ namespace HomeWorkProject
 
             Console.WriteLine(sb.ToString());
         }
-    }
-}
-   
 
-   
-   
+    }
+
+}
