@@ -9,7 +9,7 @@ public class Kl_Task3
     {
 
 
-        //    //solution.solution1();
+        //solution.solution1();
         //Solution.Solution7();
         //Solution.TaskDictionnary();
         //}
@@ -52,8 +52,8 @@ public class Kl_Task3
 
         //    //Ky kodi therret zgjidhjen nga klasa solution task 1
         //    //Task1.Solution();
-        //    //    //Homework1.Solution();
-        //    //    //Console.WriteLine();
+        //    //    Homework1.Solution();
+        //    //    Console.WriteLine();
 
     }
 }
